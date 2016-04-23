@@ -1,0 +1,43 @@
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKMvi3eLZ3zFA6086abIJqQjDZGkDIl1zFvZ/8TbmklPLQwMOic+AY2gxO8tCp/V/yT8brKjBZQ+Y+LW/DDESFuGAvsEQxTpC+23e6KMr+MqsyuAf2Re9MfU+IR9dK7SBvbyVvOJWG9y2ZWLvAW+aNaC+tLXJNHDDLJgCSM1DlYrHu/yn9L2JXfrZ/KjDVPQVNC3RCnNBX6DhuGXzdPaHppcOX4UvqqAOO1LLtIMAlPyi+bYkN+KRmxHYHb1lIR3a6Ydt/XOEcx7+YQCqd6vnF3Mc7oVAzarKjdKySQeWcjqhqKM2yjootzmtxSME+acrL17IH93irW7sHMKgn+/w4p1nIdYom3Wh7GQhT53IMu71qBxl9jg665wQd9pNFmeHxzKEL846F82JUJkYWy0yPB1jQOD9I/Pr8z1li+ET0JbAjd2+SieELPOZi6dXJIBA2lej2lCygJNsj7jaB7lxHwKmnvjVUrpClV/pMHX2nczYa+UYCld4SgY1Tkfa2Va+pL7OoC1Bidk7Q3Z7VTqBKYo/9NBO8gcaf5YlAcujKj1ypf7DyzpkOnTZU/mjbKcKdXbeIObKuMFJoFtx94PhO8oXAKasWq0D8t88cPwsprLDG84P3U4hJ9gwDDuLM72CTC/JearZlhpPnILnUvRi6Y3CSJWqz9LssAd2zRvkzvQ== gsksivesh@gmail.com
+
+ggi
+https://github.com/gsksivesh/extra_problems.git
+
+On github.com
+1.Login to your github account
+2.Go to your profile 
+3.Go to repositories tab
+4.click New and Keep the repo name as extra_problems
+5.You can check public and intialize repo with a readme
+6.Copy the https clone url in the right side of the windows
+On your PC
+1.Create a new folder in any location , preferably your working environment where you stored all files before 
+2.Let the new_folder name be C_class_submissions
+2.Navigate to the C_class_submissions folder and open command line or gitbash there ,(Shift + Right Click )
+3.Execute the following commands 
+->git init
+->git remote add origin "the copied link before"
+example : git remote add origin https://github.com/souravabhijith/extra_problems.git
+->git pull origin master
+4.Check wheater a Readme.md has been successfully pulled/donwloaded into the folder or not .
+5.Create a new folder with the name as the date at which the problems are given ,Will be specified in the group
+Example :Create a new folder cagit initlled 2015_30_11
+6.Navigate to the folder and add a questions<date>.txt file
+Like questions2015_30_11.txt file and copy the Fb post where the questions are given here and save it .
+7.Go back to the main folder ,(the one where you ran git init )
+8.Open command prompt again , Execute the following commands
+git add file_name*
+git commit -m "Your message"
+git push origin master
+{enter your username and password when asked}
+9.You can check the status every time by running "git status" , Green specifies new files that are added not commited , Red specifies you need to add those files
+On github 
+Check whether the extra_problems/date/questionsdate.txt is created or not
+How to submit the C-Files
+->Code your Programs in your IDE ,and copy only the Cfiles required into the date folder you created to which the program belongs 
+Ex:Progs given on 4th Jan should be copied into 2016_4_1 folder ,not any other date folder
+->Run git add file_name* 
+->Check with git status whether are those files are showing in green or not ,if they are red Add again
+->Run git commit -m "Progname added"
+->Run git push origin master
+You can check again with git status , if it shows nothing more to commit you are good to go
